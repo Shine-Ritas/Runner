@@ -1,12 +1,12 @@
 name: "Scheduled Runners"
 
 on:
-    schedule:
-        - cron: '*/2 * * * *'
+  schedule:
+    - cron: '*/1 * * * *'
 
 jobs:
-    run-schedule:
-        runs-on: ubuntu-latest
-        steps:
-            - name: "Output Server Time"
-              run: echo " This is current server time is $(date)"
+  run-schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Output Server Time"
+        run: echo "This is the current server time is $(date)"
